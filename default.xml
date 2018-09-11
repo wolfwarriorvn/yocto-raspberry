@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com/mendersoftware" name="mender" />
+  
+
+  <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="rocko" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+
+  <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="mender" revision="rocko" name="meta-mender" path="sources/meta-mender"/>
+
+</manifest>
